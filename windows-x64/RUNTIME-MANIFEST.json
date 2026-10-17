@@ -3,7 +3,7 @@
   "platform": "windows-x64",
   "python": "3.11.9",
   "tcl_tk": "8.6.12",
-  "source_commit": "790898b47e88932097dbdd77a155a8066b3d7f62",
+  "source_commit": "9e1d07c004db4d7094186b809ac3cd3a38095959",
   "origin_host": "LAPTOP-MCMQHDN4",
   "roles": {
     "app": "application and support script",
@@ -11,7 +11,7 @@
   },
   "files": {
     "SOURCE-COMMIT.txt": {
-      "sha256": "d6a44180c86332a337b04b43d7c282ab5a2d7b4bf9a54e3d459564b7d84d468f",
+      "sha256": "ffa1e276293497382bc9992e93367f1fdf4f566601f513f45eaeb7851a9ae0f9",
       "bytes": 41
     },
     "START.cmd": {
@@ -31,8 +31,8 @@
       "bytes": 7923
     },
     "app/project_manager.pyw": {
-      "sha256": "820d6e9cc30f51382e6dab7fab3bd5f5bff97ef97421c6441454542a88c940c4",
-      "bytes": 62933
+      "sha256": "86aa472f91573b91b632c3f96733c8827ee39ec861df3f8dcdce4792fbb775a7",
+      "bytes": 64231
     },
     "python/DLLs/_asyncio.pyd": {
       "sha256": "746bc8fa88282afe19dc60e426cc0a75bea3bd137cca06a0b57a30bd31459403",

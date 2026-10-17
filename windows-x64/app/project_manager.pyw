@@ -679,6 +679,7 @@ class App(tk.Tk):
         ttk.Label(frame,text='会话备份：'+backup['archive']+'\n'+backup['scope'],wraplength=1080,foreground='#63718a').pack(anchor='w',pady=(6,0))
         toolbar=ttk.Frame(frame);toolbar.pack(fill='x',pady=(18,8))
         ttk.Label(toolbar,text='这个项目的 Codex 会话',font=('Microsoft YaHei UI',12,'bold')).pack(side='left')
+        ttk.Button(toolbar,text='完整资料 / 分支目录',command=self.open_full_project_info).pack(side='left',padx=(12,0))
         self.session_query=tk.StringVar()
         ttk.Entry(toolbar,textvariable=self.session_query,width=32).pack(side='right')
         ttk.Label(toolbar,text='在本项目内搜索标题 / ID  ').pack(side='right')
@@ -697,6 +698,20 @@ class App(tk.Tk):
         self.session_count=tk.StringVar();ttk.Label(actions,textvariable=self.session_count).pack(side='right')
         self.session_query.trace_add('write',lambda *_:self.refresh_sessions())
         self.refresh_sessions()
+    def open_full_project_info(self):
+        project=getattr(self,'detail_project',None) or self.current()
+        if not project:return
+        content=full_project_info(project)
+        win=tk.Toplevel(self);win.title(project['name']+' · 完整资料 / 分支目录');win.geometry('1000x650');win.transient(self)
+        frame=ttk.Frame(win,padding=16);frame.pack(fill='both',expand=True)
+        bar=ttk.Frame(frame);bar.pack(fill='x',pady=(0,10))
+        ttk.Label(bar,text='完整资料 · 源码 / 运行时版本与目录',font=('Microsoft YaHei UI',12,'bold')).pack(side='left')
+        ttk.Button(bar,text='复制完整资料',command=lambda:self.copy(content)).pack(side='right')
+        area=ttk.Frame(frame);area.pack(fill='both',expand=True)
+        text=tk.Text(area,wrap='word',font=('Microsoft YaHei UI',10),background='white',foreground='#25324a',relief='flat',padx=12,pady=10)
+        scroll=ttk.Scrollbar(area,orient='vertical',command=text.yview);text.configure(yscrollcommand=scroll.set)
+        text.pack(side='left',fill='both',expand=True);scroll.pack(side='right',fill='y')
+        text.insert('1.0',content);text.configure(state='disabled')
     def refresh_sessions(self):
         if self.session_tree is None or not self.session_tree.winfo_exists():return
         project=self.detail_project

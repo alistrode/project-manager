@@ -4,7 +4,7 @@
 
 - 运行分支：`delivery/project-manager-runtime-20261017`
 - 对应源码：[`delivery/project-manager-source-20261017`](https://github.com/trlstdin/rororororo/tree/delivery/project-manager-source-20261017)
-- 源码提交：`790898b47e88932097dbdd77a155a8066b3d7f62`
+- 源码提交：`9e1d07c004db4d7094186b809ac3cd3a38095959`
 - `windows-x64/app/project_manager.pyw` 与源码分支的 `src/project_manager/app.py` 字节一致。
 - `windows-x64/python/` 为第三方运行依赖，不是应用源码。
 - `windows-x64/RUNTIME-MANIFEST.json` 是交付文件的逐项 SHA-256 清单。
