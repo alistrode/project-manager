@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "core_source": [
+    "src/project_manager/app.py"
+  ],
+  "scripts": [
+    "tools/cloud_project_receiver.py",
+    "tools/build_runtime.py"
+  ],
+  "files": {
+    ".gitignore": {
+      "sha256": "432e8ffb1d66d560d0d4412888cb56a2bc6ef2c8d581281fdfac7b460dad5991",
+      "bytes": 122
+    },
+    "README.md": {
+      "sha256": "2d572577212b0021c88b335ff949294a61431ed4cdac5e58c5f4108a83f20a97",
+      "bytes": 2475
+    },
+    "docs/DELIVERY.md": {
+      "sha256": "846243bb17a33d969bd63385da1b9b08dd8d84cc96d9787cb5fbe1e7d88707f7",
+      "bytes": 747
+    },
+    "src/project_manager/app.py": {
+      "sha256": "820d6e9cc30f51382e6dab7fab3bd5f5bff97ef97421c6441454542a88c940c4",
+      "bytes": 62933
+    },
+    "tools/build_runtime.py": {
+      "sha256": "2be09a686cca09a803878ab10add8ea5ced54b535825636cc8754898a9cc0c27",
+      "bytes": 1899
+    },
+    "tools/cloud_project_receiver.py": {
+      "sha256": "ead87dcda890c247ef167e8cb268176ec327329952736b2823e64c19538c1a45",
+      "bytes": 7923
+    }
+  }
+}

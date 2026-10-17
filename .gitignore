@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+/data-location.json
+**/projects.json
+**/session_index.json
+**/view-settings.json
+**/handoff/
+*.log
