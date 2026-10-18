@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-18",
+  "consolidation_only": true,
+  "application_files_modified": false,
+  "new_os_packages": false,
+  "checks": {
+    "source_manifest_files": 6,
+    "runtime_manifest_files": 3722,
+    "source_matches_runtime": true,
+    "windows_native_run_this_session": false
+  },
+  "scope": "本次实际执行的云端完整性核对和有限 Linux 执行结果；不是 Windows/macOS 原生验收，也不是外部服务或装机全流程验收"
+}

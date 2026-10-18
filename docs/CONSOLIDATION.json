@@ -1,0 +1,35 @@
+{
+  "project": "桌面项目管理器",
+  "branch": "projects/project-manager",
+  "date": "2026-10-18",
+  "original_branches": [
+    {
+      "branch": "delivery/project-manager-source-20261017",
+      "commit": "9e1d07c004db4d7094186b809ac3cd3a38095959",
+      "tag": "snapshot/20261018-before-consolidation/delivery/project-manager-source-20261017"
+    },
+    {
+      "branch": "delivery/project-manager-runtime-20261017",
+      "commit": "9b786f22a4519f60a73e1b635ac938e00712e743",
+      "tag": "snapshot/20261018-before-consolidation/delivery/project-manager-runtime-20261017"
+    }
+  ],
+  "mappings": [
+    {
+      "branch": "delivery/project-manager-source-20261017",
+      "source_prefix": "",
+      "destination_prefix": "source/",
+      "retained_files": 7
+    },
+    {
+      "branch": "delivery/project-manager-runtime-20261017",
+      "source_prefix": "windows-x64/",
+      "destination_prefix": "release/windows-x64/",
+      "retained_files": 3723
+    }
+  ],
+  "archived_only": [],
+  "application_source_changed": false,
+  "new_os_packages": false,
+  "validation_scope": "原始 Git 对象、源文件与运行包清单和归档完整性核对；平台执行结果单独记录，不把文件核对视为 Windows/macOS 原生验收"
+}
