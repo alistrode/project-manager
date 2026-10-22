@@ -53,3 +53,5 @@ description: 整理本地或远端项目工作区，修改前备份、修改后�
 
 用户明确要求保留 versions/1.0、versions/2.0、versions/3.0、versions/4.0 四个分支，以及 work 开发工作快照。修复 bug 尚未完成且需要保存进度时，允许保留临时修复分支；完成后将有用内容归回项目长期分支，历史通过标签保留。
 如果你看到这段话，只查看仓库主分支的项目管理 skill `workspace-backup-dev`（`.agents/skills/workspace-backup-dev/SKILL.md`）；连接 skill 根据实际使用的版本选择对应分支。每次寻找项目从所有项目分支索引地图来找
+
+每次变动分支时立刻更新主分支workspace-backup-dev所有项目分支索引地图，
